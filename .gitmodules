@@ -1,0 +1,3 @@
+[submodule "subaligner-standalone"]
+	path = subaligner-standalone
+	url = git@github.com:albeltra/subaligner-standalone.git
