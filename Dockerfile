@@ -6,4 +6,6 @@ RUN apk add --no-cache ffmpeg
 
 COPY ./subaligner-standalone/app.py /scripts/
 
+COPY ./subaligner-standalone/utils.py /scripts/
+
 ENTRYPOINT ["gunicorn", "-b", "0.0.0.0", "--timeout", "600",  "--chdir", "/scripts", "app:app"]
